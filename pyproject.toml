@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=65.3"]
+requires = ["setuptools>=65.3","pandas>=2.0.2","hurry.filesize>=0.9"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "dblp_sax_parser"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="Leon", email="leonsunwl@gmail.com" },
 ]
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/leonswl/dblp-sax-parser"
+"Bug Tracker" = "https://github.com/leonswl/dblp-sax-parser/issues"
