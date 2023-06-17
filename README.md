@@ -16,6 +16,18 @@
 ### What is it?
 A parsing package using the [Simple API for XML (SAX)](https://docs.python.org/3/library/xml.sax.html).
 
+There are a total of 10 elements: "article", "inproceedings", "proceedings", "book", "incollection", "phdthesis", "mastersthesis", "www", "person", "data".
+
+Across the elements, these are the feature types available: "address", "author", "booktitle","cdrom", "chapter", "cite", "crossref", "editor", "ee", "isbn", "journal", "month", "note", "number", "pages", "publisher", "publnr", "school", "series", "title", "url", "volume", "year"
+
+**Features**
+- download dblp files from the dblp website directly
+- parse throught the dblp xml file into a dataframe, exported with either csv or pickle format. 
+
+**Future features for consideration**
+- add more methods to parse data from a specific attribute. E.g. only for years in 2016
+- select which elements or features to be included/excluded 
+
 ### Context and Purpose
 I created this package when working on a project as part of a course module. The aim of this package is to provide a quick way to parse DBLP elements directly, with the contents exported as a csv file for further preprocessing based on individual's use case.
 
@@ -59,26 +71,28 @@ handler.save() # persist as pickle
 ### DBLP Methods
 
 *class* DBLP_Parser  
-  This is the main class to be instantiated when before using the parser
-
-*class* DBLP_Parser.  **download_latest_dump**    
-> Begins downloading the latest dblp files from the [dblp website](https://dblp.uni-trier.de/xml). If the url location where files are hosted is changed/incorrect, a separate url can be used instead.
-
-> This downloads the dblp `.dtd` and `.xml.gz` files, and decompress the `.gz` file into `.xml`.
-
-> dtd_url[str]: url location of the `.dtd` file to be downloaded from.  
-
-> xml_zip_url [str]: url of the `.xml.tz` file to be downloaded from.  
   
-> xml_zip_filename [str]: specify filename of the downloaded `.xml.gz` file. 
+    This is the main class to be instantiated when before using the parser
+
+*class* DBLP_Parser.**download_latest_dump**    
+
+    Begins downloading the latest dblp files from the [dblp website](https://dblp.uni-trier.de/xml). If the url location where files are hosted is changed/incorrect, a separate url can be used instead.
+
+    This downloads the dblp `.dtd` and `.xml.gz` files, and decompress the `.gz` file into `.xml`.
+
+      dtd_url[str]: url location of the `.dtd` file to be downloaded from.  
+
+      xml_zip_url [str]: url of the `.xml.tz` file to be downloaded from.  
   
-> xml_filename [str]: specify filename of the `.xml` file that is decompressed.
+      xml_zip_filename [str]: specify filename of the downloaded `.xml.gz` file. 
+  
+      xml_filename [str]: specify filename of the `.xml` file that is decompressed.
   
 *class* DBLP_Parser.**execute_parser**  
 
-> This executes the underlying SAX parser, calling the xml.sax.handler.ContentHandler
+    This executes the underlying SAX parser, calling the xml.sax.handler.ContentHandler
 
-> filename [str]:  path and name of XML file to be parsed. If **download_latest_dump() was used, the file to be parsed will be `"dblp.xml"`.
+      filename [str]:  path and name of XML file to be parsed. If **download_latest_dump() was used, the file to be parsed will be `"dblp.xml"`.
 
 
 ### License
