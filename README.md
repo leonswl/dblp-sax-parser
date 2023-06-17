@@ -71,28 +71,20 @@ handler.save() # persist as pickle
 ### DBLP Methods
 
 *class* DBLP_Parser  
-  
-    This is the main class to be instantiated when before using the parser
+- This is the main class to be instantiated when before using the parser
 
 *class* DBLP_Parser.**download_latest_dump**    
-
-    Begins downloading the latest dblp files from the [dblp website](https://dblp.uni-trier.de/xml). If the url location where files are hosted is changed/incorrect, a separate url can be used instead.
-
-    This downloads the dblp `.dtd` and `.xml.gz` files, and decompress the `.gz` file into `.xml`.
-
-      dtd_url[str]: url location of the `.dtd` file to be downloaded from.  
-
-      xml_zip_url [str]: url of the `.xml.tz` file to be downloaded from.  
-  
-      xml_zip_filename [str]: specify filename of the downloaded `.xml.gz` file. 
-  
-      xml_filename [str]: specify filename of the `.xml` file that is decompressed.
+- Begins downloading the latest dblp files from the [dblp website](https://dblp.uni-trier.de/xml). If the url location where files are hosted is changed/incorrect, a separate url can be used instead.
+- This downloads the dblp `.dtd` and `.xml.gz` files, and decompress the `.gz` file into `.xml`.
+- dtd_url[str]: url location of the `.dtd` file to be downloaded from.  
+- xml_zip_url [str]: url of the `.xml.tz` file to be downloaded from.  
+- xml_zip_filename [str]: specify filename of the downloaded `.xml.gz` file. 
+- xml_filename [str]: specify filename of the `.xml` file that is decompressed.
   
 *class* DBLP_Parser.**execute_parser**  
 
-    This executes the underlying SAX parser, calling the xml.sax.handler.ContentHandler
-
-      filename [str]:  path and name of XML file to be parsed. If **download_latest_dump() was used, the file to be parsed will be `"dblp.xml"`.
+- This executes the underlying SAX parser, calling the xml.sax.handler.ContentHandler
+- filename [str]:  path and name of XML file to be parsed. If **download_latest_dump() was used, the file to be parsed will be `"dblp.xml"`.
 
 
 ### License
