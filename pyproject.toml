@@ -1,10 +1,12 @@
 [build-system]
-requires = ["setuptools>=65.3","pandas>=2.0.2","hurry.filesize>=0.9"]
+requires = [
+  "setuptools>=65.3"
+  ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "dblp_sax_parser"
-version = "0.0.4"
+version = "0.1"
 authors = [
   { name="Leon", email="leonsunwl@gmail.com" },
 ]
@@ -15,6 +17,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "pandas >= 2.0.2",
+    "hurry.filesize >= 0.09"
 ]
 
 [project.urls]

@@ -1,8 +1,12 @@
 # DBLP SAX Parser
 
 <p align="center">
-    <a href="https://www.python.org/downloads/release/python-3113/" alt="Contributors">
+    <a href="https://www.python.org/downloads/release/python-3113/" alt="python">
       <img src="https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue"/></a>
+    <a href="https://pypi.org/project/dblp-sax-parser/" alt="pypi version">
+      <img src="https://img.shields.io/badge/Pypi-v1.0.0-blue"/></a>
+    <a href="https://pypi.org/project/dblp-sax-parser/" alt="status">
+      <img src="https://img.shields.io/badge/status-experimental-yellow"/></a>
 </p>
 
 - [DBLP SAX Parser](#dblp-sax-parser)
@@ -18,7 +22,7 @@ A parsing package using the [Simple API for XML (SAX)](https://docs.python.org/3
 
 There are a total of 10 elements: "article", "inproceedings", "proceedings", "book", "incollection", "phdthesis", "mastersthesis", "www", "person", "data".
 
-Across the elements, these are the feature types available: "address", "author", "booktitle","cdrom", "chapter", "cite", "crossref", "editor", "ee", "isbn", "journal", "month", "note", "number", "pages", "publisher", "publnr", "school", "series", "title", "url", "volume", "year"
+Across the elements, these are the feature types available: "address", "author", "booktitle","cdrom", "chapter", "cite", "crossref", "editor", "ee", "isbn", "journal", "month", "note", "number", "pages", "publisher", "publnr", "school", "series", "title", "url", "volume", "year".
 
 **Features**
 - download dblp files from the dblp website directly
