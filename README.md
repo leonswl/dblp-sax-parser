@@ -35,7 +35,7 @@ Across the elements, these are the feature types available: "address", "author",
 ### Context and Purpose
 I created this package when working on a project as part of a course module. The aim of this package is to provide a quick way to parse DBLP elements directly, with the contents exported as a csv file for further preprocessing based on individual's use case.
 
-Installation
+**Installation**
 ```
 pip install dblp-sax-parser
 
@@ -51,7 +51,7 @@ First step to using this parser is to instantiate the dblp_parser
 dblp = dp()
 ```
 
-You can also DBLP_Parser to download the dblp data assets from the dblp website
+You can also DBLP_Parser to download the dblp data assets from the dblp website. However, note that it might be faster to just head to the dblp site to download the file contents directly. 
 ```
 # download latest data sets from dblp website
 dblp.download_latest_dump()
