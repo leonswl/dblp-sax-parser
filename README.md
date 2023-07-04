@@ -4,7 +4,9 @@
     <a href="https://www.python.org/downloads/release/python-3113/" alt="python">
       <img src="https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue"/></a>
     <a href="https://pypi.org/project/dblp-sax-parser/" alt="pypi version">
-      <img src="https://img.shields.io/badge/Pypi-v1.0.0-blue"/></a>
+      <img src="https://img.shields.io/badge/Pypi-v0.1-blue"/></a>
+    <a href="https://pypi.org/project/dblp-sax-parser/" alt="PyPI - Downloads">
+      <img src="https://img.shields.io/pypi/dm/dblp-sax-parser"/></a>
     <a href="https://pypi.org/project/dblp-sax-parser/" alt="status">
       <img src="https://img.shields.io/badge/status-experimental-yellow"/></a>
 </p>
